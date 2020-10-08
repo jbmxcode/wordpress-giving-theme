@@ -1,0 +1,21 @@
+.widget-categories {
+    .items-list { @include stripped-list; }
+
+    .item {
+        display: block;
+
+        &:last-child a { border-bottom: 0; }
+
+        a {
+            @include sweep-to-right($hover-bg: $primary-color, $hover-text: $color-over-primary);
+            @include flex-all($justify: space-between);
+            width: 100%;
+            padding: 1rem 0;
+            text-decoration: none;
+            border-bottom: 1px solid $c-grey-mid;
+            transition: color .5s, padding .5s;
+
+            @include hover { padding: { left: .5rem; right: .5rem; } }
+        }
+    }
+}

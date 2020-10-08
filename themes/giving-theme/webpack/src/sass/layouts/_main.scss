@@ -1,0 +1,25 @@
+.site-content {
+    padding: 5rem 0;
+    background-color: $secondary-color;
+
+    .home & { 
+        padding-bottom: 0;
+        background-color: transparent; 
+
+        .container__inner { padding: 0 1rem; }
+    }
+    
+    .container__inner { @include flex-all(column); }
+
+    @include respond-to($vp-large) {
+        .home & {
+            .container { max-width: 100%; }
+        }
+        
+        .container__inner { 
+            flex-direction: row; 
+
+            .home & { flex-direction: column; }
+        }
+    }
+}

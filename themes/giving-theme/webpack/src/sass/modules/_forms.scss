@@ -1,0 +1,46 @@
+
+.form-block {
+    @include flex-all;
+}
+
+.form-item { flex: 1; }
+
+.form-input,
+.form-textarea { 
+    width: 100%; 
+    padding: 1rem; 
+    border: 1px solid $c-grey-mid;
+}
+
+.form-textarea {
+    height: 150px;
+    resize: none;
+}
+
+.form-text { 
+    display: block;
+    margin-bottom: .375rem; 
+}
+
+.submit {
+    padding: 1rem 3rem;
+    font: {
+        family: $secondary-font;
+        weight: 500;
+    }
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 0;
+    color: $c-black;
+    background-color: $c-grey-mid;
+    cursor: pointer;
+    transition: color .5s, background-color .5s;
+
+    @include hover-bg-color($primary-color, $color-over-primary);
+}
+
+label { 
+    display: block;
+    width: 100%; 
+    margin: .5rem 0;
+}

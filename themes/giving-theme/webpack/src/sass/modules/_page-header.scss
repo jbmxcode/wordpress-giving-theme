@@ -1,0 +1,46 @@
+.page-header {
+    @include flex-all(column, center, center);
+    @include bg-cover;
+    padding: 3rem 0;
+    background-color: $c-white;
+
+    .home & {        
+        .section {
+            border: 1px solid $c-white;
+
+            &__inner { background-color: rgba($c-white, .8); }
+        }
+    }
+
+    .section {
+        @include width-constrain(510px);
+        padding: 5px;
+        text-align: center;
+
+        &__inner {
+            @include flex-all(column, center, center);
+            padding: 2rem;
+        }
+    }
+
+    .summary {
+        color: $c-black;
+
+        > * { display: block; }
+
+        p { margin: 0; }
+    }
+
+    @include respond-to($vp-large) {
+        height: 268px; 
+        padding: 0;
+
+        .home & { 
+            height: 600px; 
+
+            .section__inner { height: 200px; }
+        } 
+
+        .section__inner { padding: 0; }
+    }
+}

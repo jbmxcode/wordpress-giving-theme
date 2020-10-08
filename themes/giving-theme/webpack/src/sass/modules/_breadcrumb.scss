@@ -1,0 +1,22 @@
+.breadcrumb {
+    .items-list { @include flex-all($justify: center, $align: center, $wrap: wrap); }
+
+    .item {
+        color: $c-grey-dark;
+
+        &:before {
+            content: "\02f";
+            margin: 0 .5rem;
+            color: $primary-color;
+        }
+
+        &:first-child:before { content: none; }
+
+        a {
+            @include underline-from-left($border-size: 1px, $border-color: $primary-color);
+            padding: .25rem 0;
+            text-decoration: none;
+            color: $primary-color;
+        }
+    }
+}

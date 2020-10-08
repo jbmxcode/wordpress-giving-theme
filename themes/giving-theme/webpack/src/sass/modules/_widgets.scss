@@ -1,0 +1,30 @@
+.widgets {
+    order: 2;
+    width: 100%;
+    padding: 2rem 0;
+
+    .section { 
+        padding: 1rem 1rem 2rem 1rem;
+        margin: 0 0 1.25rem; 
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        background-color: $c-white;
+    }
+
+    @include respond-to($vp-mid) { 
+        .column { @include flex-all($justify: space-between, $wrap: wrap); }
+
+        .section { flex: 0 1 calc(50% - .5rem); }
+    }
+
+    @include respond-to($vp-large) { 
+        order: 1; 
+        max-width: 300px; 
+        padding: 0;
+
+        .column { display: block; }
+
+        .section { 
+            flex: none; 
+        }
+    }
+}

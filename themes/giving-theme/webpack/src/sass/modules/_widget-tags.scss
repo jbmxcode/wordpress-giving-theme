@@ -1,0 +1,14 @@
+.widget-tags {
+    .items-list { @include flex-all($wrap: wrap); }
+
+    .item {
+        margin: 0 .5rem .5rem 0;
+        
+        a {
+            @include sweep-to-right($hover-bg: $primary-color, $hover-text: $color-over-primary);
+            padding: .5rem 1rem;
+            text-decoration: none;
+            border: 1px solid $c-grey-mid;
+        }
+    }
+}

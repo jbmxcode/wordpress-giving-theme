@@ -1,0 +1,94 @@
+.single-post {
+    flex: 1;
+    order: 1;
+    
+    .post { 
+        margin-bottom: 2rem;
+        border: 1px solid $c-grey-mid;
+        background-color: $c-white; 
+        line-height: 1.675;
+
+        > * { padding: 0 2rem; }
+
+        &-thumbnail { 
+            padding: 0 0 2rem; 
+
+            img { max-width: 100%; }
+        }
+
+        &-title .title { line-height: 1; }
+
+        &-meta {
+            margin-bottom: 2rem;
+
+            @include respond-to($vp-mid) {
+                .items-list { @include flex-all; }
+
+                .item {
+                    margin-left: 1rem;
+                    padding-left: 1rem;
+                    border-left: 1px solid $c-grey-mid;
+    
+                    &:first-child {
+                        margin-left: 0;
+                        padding-left: 0;
+                        border-left: 0;
+                    }
+                }
+
+            }
+        }
+
+        &-content {
+            padding-bottom: 2rem; 
+
+            h1, h2, h3, h4, h5, h6 { 
+                margin-bottom: .875rem;
+                font-weight: 300; 
+                color: $c-black; 
+            }
+
+            h3 { font-size: 1.5rem; }
+
+            ul {
+                padding-left: 1rem;
+                list-style-type: none;
+                
+                li {
+                    @include flex-all($align: center);
+                    @include pseudo {
+                        width: 8px;
+                        height: 8px;
+                        margin-right: .5rem;
+                        border-radius: 50%;
+                        background-color: $c-grey-mid;
+                        overflow: hidden;
+                    }
+                }
+            }
+
+            blockquote {
+                margin: 0 0 .875rem 1rem;
+                padding: 1rem 1.5rem;
+                font: {
+                    size: 1.125rem;
+                    style: italic;
+                }
+                border-left: 5px solid $c-grey-dark;
+
+                p { margin: 0; }
+            }
+
+            pre {
+                display: block;
+                margin: 1rem 0;
+                border-radius: 10px;
+                border: 1px solid $c-grey-mid;
+                background-color: $c-grey;
+                white-space:normal;
+                white-space: pre-wrap;
+            } 
+            
+        }
+    }
+}

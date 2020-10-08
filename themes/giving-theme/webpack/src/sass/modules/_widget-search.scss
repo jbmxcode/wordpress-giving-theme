@@ -1,0 +1,40 @@
+.widget-search {
+    .form-item {
+        &:last-child { flex: none; }
+    }
+
+    .search-field,
+    .search-submit {
+        @include flex-all($align: center);
+        height: 35px;
+        line-height: 35px;
+        border: 1px solid $c-grey-mid;
+    }
+
+    .search-field {
+        flex: 1;
+        padding: 0 1rem;
+    }
+
+    .search-submit {
+        justify-content: center;
+        width: 40px;
+        border-left: 0;
+        background-color: $c-white;
+        cursor: pointer;
+        transition: color .5s, background-color .5s;
+
+        &:before {
+            content: "\f002";
+            font: {
+                family: $icons-font;
+                weight: 900;
+            }
+            transition: color .5s;
+        }
+
+        @include hover-bg-color($primary-color, $color-over-primary) {
+            &:before { color: $color-over-primary; }
+        }
+    }
+}

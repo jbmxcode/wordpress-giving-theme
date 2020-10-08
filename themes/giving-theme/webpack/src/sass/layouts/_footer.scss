@@ -1,0 +1,37 @@
+/* ---------------------------------- */
+/*            Footer Layout           */
+/* ---------------------------------- */
+
+.site-footer {
+    padding: 2rem 0;
+    background-color: $c-white;
+
+    .title {
+        font-size: .875rem;
+        text: {
+            align: center;
+            transform: uppercase;
+        }
+
+        a { @include hover-underline; }
+    }
+
+    .column { margin: 1rem 0; }
+
+    @include respond-to($vp-mid) {
+        .row__inner { @include flex-all($justify: space-between, $align: center); }
+
+        .title { text-align: left; }
+    }
+}
+
+.footer-social-links {
+    .items-list { @include flex-all($justify: center, $wrap: wrap); }
+
+    .item { margin: 0 .5rem; }
+
+    @include respond-to($vp-mid) {
+        .items-list { justify-content: flex-end; }
+        .item { margin-right: 0; }
+    }
+}

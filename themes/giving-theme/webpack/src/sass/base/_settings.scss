@@ -1,0 +1,120 @@
+// Responsive
+//
+// Different sizes for responsive
+//
+// **$vp-small**
+// **$vp-mid**
+// **$vp-large**
+// **$vp-max**
+//
+// Markup: 
+// @include respond-to($vp-small) { ... }
+// @include respond-to($vp-mid) { ... }
+// @include respond-to($vp-large) { ... }
+// @include respond-to($vp-max) { ... }
+//
+// Styleguide Base.settings
+
+$vp-small				: 320px;	// small size 
+$vp-mid					: 768px;	// mid size
+$vp-large				: 1024px;	// large size
+
+$vp-max					: 1350px;	// max viewport
+
+// Container
+//
+// Size for Main Container
+//
+// **$site-width**
+//
+// Styleguide Base.settings
+
+$site-width				: 1200px;
+
+// Logos Sizes
+//
+// Width and Height for Footer and Header logo
+//
+// **$header-logo-height**
+//
+// **$header-logo-width**
+//
+// **$footer-logo-height**
+//
+// **$footer-logo-width**
+//
+// Styleguide Base.settings
+
+$header-logo-height		: 150px;
+$header-logo-width		: 150px;
+$footer-logo-height		: 173px;
+$footer-logo-width		: 523px;
+
+// Colors
+//
+// Branding Colors
+//
+// $primary-color - rgb(22, 14, 83); Primary Color 
+// $secondary-color - rgb(255, 120, 0); Secondary Color
+// $tertiary-color - rgb(233, 232, 243); Tertiary Color
+//
+// Styleguide Base.colors
+
+$c-white                : rgb(255,255,255);
+$c-black                : rgb(0,0,0);
+$c-grey                 : rgb(246, 246, 246);
+$c-grey-mid             : rgb(229, 229, 229);
+$c-grey-dark            : rgb(153, 153, 153);
+$c-text                 : rgb(102, 102, 102);;
+
+$primary-color			: $c-black;
+$color-over-primary		: $c-white;
+
+$secondary-color		: $c-grey;
+$color-over-secondary	: $c-black;
+
+// Social Colors
+//
+// Colors of major social networks
+//
+// $facebook - rgb(24,119,242); Facebook
+// $twitter - rgb(29,161,242); Twitter
+// $youtube - rgb(255,0,0); Youtube
+// $instagram - rgb(215,53,118); Instagram
+//
+// Styleguide Base.colors
+
+$facebook				: rgb(24,119,242);
+$twitter				: rgb(29,161,242);
+$youtube				: rgb(255,0,0);
+$instagram				: rgb(215,53,118);
+
+// Logos Images
+//
+// Location for header and footer logo
+//
+// **$header-logo-image**
+//
+// **$footer-logo-image**
+//
+// Styleguide Base.settings
+
+$header-logo-image			: "images/header_logo.png";
+$footer-logo-image			: $header-logo-image;
+
+
+// Fonts
+//
+// **$primary-font**
+// **$base-font-size**
+//
+// Styleguide Base.settings
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@300;400;700&display=swap');
+
+$primary-font			    : 'Lato', sans-serif;
+$secondary-font			    : 'Oswald', sans-serif;
+$icons-font                 : 'Font Awesome 5 Free';
+
+$base-font-size			    : 14px;
+

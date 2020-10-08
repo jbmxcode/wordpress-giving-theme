@@ -1,0 +1,19 @@
+.comment-form {
+    padding: 1rem 2rem;
+    background-color: $c-white;
+
+    @include respond-to($vp-mid) {
+        .form-block {
+            margin: 1rem 0; 
+
+            &:first-child {
+                .form-item { @include flex-all; }
+
+                label {
+                    &:first-child { margin-right: 1rem; }
+                    &:last-child { margin-left: 1rem; }
+                }
+            }
+        }
+    }
+}

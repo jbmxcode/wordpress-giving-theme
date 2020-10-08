@@ -1,0 +1,36 @@
+/* ---------------------------------- */
+/*            Header Layout           */
+/* ---------------------------------- */
+
+.site-header {
+    position: relative;
+    z-index: 99;
+    border-bottom: 1px solid $c-grey-mid;
+    background-color: $c-white;
+    
+    .row__inner {
+        @include flex-all($justify: space-between, $align: center);
+        position: relative;
+        height: 87px;
+    }
+}
+
+.site-title {
+    font: {
+        size: 1.5rem;
+        weight: 400;
+    }
+
+    a { 
+        text: {
+            align: center;
+            transform: uppercase;
+            decoration: none; 
+        }
+        color: $primary-color;
+    }
+
+    @include respond-to($vp-large) {
+        a { text-align: left; }
+    }
+}
