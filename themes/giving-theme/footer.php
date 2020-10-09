@@ -1,7 +1,5 @@
 <?php wp_footer(); ?>
-	</main>
-
-	<footer id="footer_main" class="site-footer" aria-label="Main Site Footer" role="contentinfo"> 
+	<footer id="footer_main" class="site-footer" aria-label="<?php esc_attr_e( 'Main Site Footer', 'giving-theme' ); ?>" role="contentinfo"> 
 		<div class="container">
 			<div class="container__inner">
 				<div class="row">
@@ -11,7 +9,7 @@
 							<section class="section">
 								<div class="section__inner">
 									<div class="section-title">
-										<div class="title"><span class="title-inner">All &copy; Reserved <a href="">wpdna</a></span></div>
+										<div class="title"><span class="title-inner"><?php _e( 'All © Reserved', 'giving-theme' ); ?> <a href=""><?php _e( 'wpdna', 'giving-theme' ); ?></a></span></div>
 									</div>
 								</div>
 							</section>

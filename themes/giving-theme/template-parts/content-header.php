@@ -8,15 +8,11 @@
                         <div class="section__inner">
                             <div class="summary">
                                 <div class="summary-header">
-                                    <h2 class="title title-page"><span class="title-inner">Single Post</span></h2>      
+                                    <h2 class="title title-page"><span class="title-inner"><?php the_title(); ?></span></h2>      
                                 </div>  
 
                                 <div class="summary-content breadcrumb">
-                                    <ul class="items-list">
-                                        <li class="item"><a href="">Home</a></li>
-                                        <li class="item"><a href="">Blog</a></li>
-                                        <li class="item">Single Post Left Sidebar</li>
-                                    </ul>
+                                    <?php custom_breadcrumbs(); ?>
                                 </div>      
                             </div>
                         </div>

@@ -64,3 +64,15 @@ function giving_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'giving_theme_scripts' );
 
 
+/**
+ * Implement the Custom Breadcrumbs.
+ */
+require get_template_directory() . '/inc/custom-breadcrumbs.php';
+
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/template-tags.php';
+
+
+

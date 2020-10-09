@@ -4,8 +4,6 @@
  *
  */
 
-/* Servicio */
-
 function giving_portfolio_register_custom_post_type() {
     $labels = array(
         'name'                => _x( 'Portfolio', 'Post Type General Name', 'giving-theme' ),
@@ -38,7 +36,8 @@ function giving_portfolio_register_custom_post_type() {
 		'hierarchical'       => false,
         'menu_position'      => null,
         'menu_icon'          => 'dashicons-portfolio',
-		'supports'           => array( 'title', 'thumbnail', 'excerpt', 'editor')
+        'taxonomies'         => array( 'category', 'post_tag' ),
+		'supports'           => array( 'title', 'thumbnail', 'excerpt', 'editor', 'page-attributes')
 	);
 
 	register_post_type( 'portfolio', $args );
