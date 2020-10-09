@@ -13,8 +13,8 @@ if ( have_posts() ) :
     <main id="content_main" class="site-content" aria-label="<?php esc_attr_e( 'Main Site Content', 'giving-theme' ); ?>" tabindex="-1" role="main">
         <div class="container">
             <div class="container__inner">
-                <?php get_template_part( 'template-parts/content', 'portfolio' ); ?>
-                <?php get_template_part( 'template-parts/content', 'latest-post' ); ?>
+                <?php echo do_shortcode( '[portfolio]' ); ?>  
+                <?php echo do_shortcode( '[latest-post]' ); ?>  
             </div>
         </div>
     </main>

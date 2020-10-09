@@ -63,6 +63,42 @@ function giving_theme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'giving_theme_scripts' );
 
+/**
+ * Portfolio Shortcode
+ */
+
+add_shortcode( 'portfolio', function () {
+
+	ob_start();
+	
+	get_template_part( 'template-parts/content', 'portfolio' );
+	
+	$output = ob_get_contents();
+	
+	ob_clean();
+	
+	return $output;
+	
+});
+
+/**
+ * Latest Post Shortcode
+ */
+
+add_shortcode( 'latest-post', function () {
+
+	ob_start();
+	
+	get_template_part( 'template-parts/content', 'latest-post' );
+	
+	$output = ob_get_contents();
+	
+	ob_clean();
+	
+	return $output;
+	
+});
+
 
 /**
  * Implement the Custom Breadcrumbs.

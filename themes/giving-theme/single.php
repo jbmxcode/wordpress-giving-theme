@@ -13,7 +13,7 @@ if ( have_posts() ) :
             <div class="container__inner">
                 <?php 
                     get_template_part( 'template-parts/content', 'single' );
-                    get_sidebar(); 
+                    get_template_part( 'template-parts/content', 'sidebar' );
                 ?>
             </div>
         </div>

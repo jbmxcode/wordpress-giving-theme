@@ -1,7 +1,10 @@
 <?php
 get_header();
 
-$args = array( 'post_type' => 'portfolio' );
+$args = array(     
+    'posts_per_page' => 1,
+    'post_type' => 'portfolio' 
+);
 $query = new WP_Query( $args );
 
 if ( $query->have_posts() ) :
@@ -16,7 +19,7 @@ if ( $query->have_posts() ) :
             <div class="container__inner">
                 <?php 
                     get_template_part( 'template-parts/content', 'single' );
-                    get_sidebar(); 
+                    get_template_part( 'template-parts/content', 'sidebar' );
                 ?>
             </div>
         </div>

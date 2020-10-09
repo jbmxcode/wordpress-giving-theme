@@ -6,7 +6,7 @@ function custom_breadcrumbs() {
     $separator          = '&gt;';
     $breadcrums_id      = 'breadcrumbs';
     $breadcrums_class   = 'items-list';
-    $home_title         = 'Homepage';
+    $home_title         = 'Home';
       
     $custom_taxonomy    = 'portfolio';
        
