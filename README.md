@@ -7,8 +7,8 @@ Te doy la bienvenida al proyecto **Giving Theme**
 
 Te explico la manera para poder llevar a cabo la instalación de este tema
 
- 1. Primero necesitas descargar el programa LocalWP y lo puedes encontrar en este enlace: `https://localwp.com`
- 2. Descarga el siguiente archivo: `https://drive.google.com/file/d/1t4UVpd1kMAK9Qws6UKT7qpQ0a987zGNu/view?usp=sharing`
+ 1. Primero necesitas descargar el programa LocalWP y lo puedes encontrar en este enlace: [Aquí](https://localwp.com)
+ 2. Descarga el siguiente archivo: [Aquí](https://drive.google.com/file/d/1t4UVpd1kMAK9Qws6UKT7qpQ0a987zGNu/view?usp=sharing)
  3. Luego de instalado **LocalWP** lo abres y en el menú (el ícono con tres rayitas) selecciona la opción **Import Site**
  4. Y eso es todo!!!
 
