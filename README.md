@@ -38,4 +38,8 @@ Sobre webpack recuerda tener [nodejs](https://nodejs.org/es/) instalado y te ind
 
 Respecto al html se utilizó handlebars y todo está divido por módulos, lo puedes ver en la ruta **/themes/giving-theme/webpack/html** y para sass de igual módo
 
+## Version Online
+
+https://static-giving-theme.netlify.app
+
 
