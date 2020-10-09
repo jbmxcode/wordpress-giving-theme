@@ -26,3 +26,16 @@ Te doy un pequeño resumen de lo que encontrarás en este repositorio
  - **/themes/giving-theme/webpack:** Mi carpeta favorita!! Aquí es donde puedes editar los archivos sass, javascript y html (luego te explico cómo)
  - **/themes/giving-theme/giving-home-template.php:** Este archivo es el template personalizado del home
  - **/themes/giving-theme/single-portfolio.php:** Es para ver en detalle cada post de portfolio
+
+## Webpack
+
+Sobre webpack recuerda tener [nodejs](https://nodejs.org/es/) instalado y te indico los pasos para instalar los módulos y la compilación del proyecto:
+
+ - Abres la **terminal** en la siguiente ruta: **/themes/giving-theme/webpack** y escribe el comando: **npm i**
+ - Luego que termine de descargar tienes varios comandos para llevar a cabo la compilación de sass, html y javascript:
+	 - **npm start** lanzará un servidor de prueba y puedes revisar el sitio 
+	 - **npm production** va a crear la carpeta **dist** y allí tendrás todo el html, sass y javascript compilado y comprimido
+
+Respecto al html se utilizó handlebars y todo está divido por módulos, lo puedes ver en la ruta **/themes/giving-theme/webpack/html** y para sass de igual módo
+
+
